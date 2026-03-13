@@ -109,16 +109,15 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#1B2A44]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
-            className="flex items-center gap-3 cursor-pointer group" 
+            className="cursor-pointer" 
             onClick={() => scrollTo("hero")}
           >
-            <div className="w-10 h-10 rounded bg-primary flex items-center justify-center text-primary-foreground font-serif text-2xl group-hover:bg-primary/90 transition-colors">
-              S
-            </div>
-            <div className="flex flex-col">
-              <span className="font-serif text-xl leading-none text-white tracking-wide">Salomons</span>
-              <span className="text-[10px] tracking-[0.2em] text-white/70 mt-1">MAKELAARDIJ</span>
-            </div>
+            <img
+              src="/salomons-logo.png"
+              alt="Salomons Makelaardij"
+              className="h-14 w-auto"
+              style={{ mixBlendMode: "screen" }}
+            />
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -280,14 +279,13 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#1B2A44] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center gap-3 mb-8">
-                    <div className="w-12 h-12 rounded bg-primary flex items-center justify-center text-primary-foreground font-serif text-3xl">
-                      S
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="font-serif text-2xl leading-none text-white tracking-wide">Salomons</span>
-                      <span className="text-xs tracking-[0.2em] text-white/70 mt-1">MAKELAARDIJ</span>
-                    </div>
+                  <div className="mb-8">
+                    <img
+                      src="/salomons-logo.png"
+                      alt="Salomons Makelaardij"
+                      className="h-16 w-auto"
+                      style={{ mixBlendMode: "screen" }}
+                    />
                   </div>
                   
                   <h3 className="text-2xl font-serif mb-2">Salomons Makelaardij</h3>
