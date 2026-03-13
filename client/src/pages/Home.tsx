@@ -252,7 +252,7 @@ export default function Home() {
 
       {/* WHY CHOOSE SECTION */}
       <section id="waarom-kiezen" className="py-24 px-6 bg-[#1B2A44] text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
           <div className="space-y-12">
             <h2 className="text-4xl font-serif leading-tight">
               Waarom kiezen voor<br />
