@@ -127,7 +127,7 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo.png"
+              src="/salomons-logo-transparent.png"
               alt="Salomons Makelaardij"
               className="h-14 w-auto"
               style={{ mixBlendMode: "screen" }}
@@ -321,7 +321,7 @@ export default function Home() {
                 <div>
                   <div className="mb-8">
                     <img
-                      src="/salomons-logo.png"
+                      src="/salomons-logo-transparent.png"
                       alt="Salomons Makelaardij"
                       className="h-16 w-auto"
                       style={{ mixBlendMode: "screen" }}
