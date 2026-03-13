@@ -209,9 +209,8 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 flex justify-center">
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl">
-              {/* Profile photo placeholder */}
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                src="/romy-salomons.jpg"
                 alt="Romy Salomons"
                 className="w-full h-full object-cover"
               />
