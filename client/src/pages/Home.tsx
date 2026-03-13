@@ -310,15 +310,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* NWWI WIDGET SECTION */}
-      <section className="py-16 px-6 bg-secondary/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-serif text-foreground text-center mb-2">Taxatie aanvragen</h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-10" />
-          <div ref={nwwiRef} className="w-full min-h-[200px]" />
-        </div>
-      </section>
-
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 px-6 bg-secondary/30">
         <div className="max-w-6xl mx-auto">
@@ -461,6 +452,15 @@ export default function Home() {
               </div>
             </div>
           </Card>
+        </div>
+      </section>
+
+      {/* NWWI WIDGET SECTION */}
+      <section className="py-16 px-6 bg-secondary/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-serif text-foreground text-center mb-2">Taxatie aanvragen</h2>
+          <div className="w-12 h-1 bg-primary mx-auto mb-10" />
+          <div ref={nwwiRef} className="w-full min-h-[200px]" />
         </div>
       </section>
 
