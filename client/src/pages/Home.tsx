@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Check, Mail, MapPin, Phone, X } from "lucide-react";
@@ -22,7 +22,20 @@ import {
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [whatsappOpen, setWhatsappOpen] = useState(false);
+  const nwwiRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
+
+  useEffect(() => {
+    if (!nwwiRef.current || nwwiRef.current.childElementCount > 0) return;
+    const widget = document.createElement("nwwi-widget");
+    widget.setAttribute("data-color", "#f0f2f600");
+    widget.setAttribute("data-font", "Montserrat,sans-serif");
+    widget.setAttribute("data-company", "179435");
+    const script = document.createElement("script");
+    script.src = "https://aanvraag.nwwi.nl/_next/static/widgets/nwwi-widget/index.js";
+    widget.appendChild(script);
+    nwwiRef.current.appendChild(widget);
+  }, []);
   const submitContact = useSubmitContact();
 
   const form = useForm<InsertContact>({
@@ -295,6 +308,15 @@ export default function Home() {
         <p className="text-xl text-muted-foreground leading-relaxed">
           Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
         </p>
+      </section>
+
+      {/* NWWI WIDGET SECTION */}
+      <section className="py-16 px-6 bg-secondary/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-serif text-foreground text-center mb-2">Taxatie aanvragen</h2>
+          <div className="w-12 h-1 bg-primary mx-auto mb-10" />
+          <div ref={nwwiRef} className="w-full min-h-[200px]" />
+        </div>
       </section>
 
       {/* CONTACT SECTION */}
