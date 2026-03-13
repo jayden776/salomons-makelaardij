@@ -158,7 +158,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <div className="mt-6">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             <a
               href="https://www.vastgoedcert.nl/makelaar/r-salomons/"
               target="_blank"
@@ -167,6 +167,15 @@ export default function Home() {
               className="inline-flex items-center gap-2 border border-white/40 text-white/90 hover:bg-white/10 hover:border-white/70 transition-all px-5 py-2 text-sm tracking-widest uppercase rounded-none backdrop-blur-sm"
             >
               ✓ Gecertificeerd via VastgoedCert
+            </a>
+            <a
+              href="https://www.nrvt.nl/voor-opdrachtgevers/zoek-een-register-taxateur/taxateur/10760"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-nrvt"
+              className="inline-flex items-center gap-2 border border-white/40 text-white/90 hover:bg-white/10 hover:border-white/70 transition-all px-5 py-2 text-sm tracking-widest uppercase rounded-none backdrop-blur-sm"
+            >
+              ✓ Register Taxateur NRVT
             </a>
           </div>
           
