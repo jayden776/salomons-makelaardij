@@ -212,7 +212,7 @@ export default function Home() {
               <img
                 src="/romy-salomons.jpg"
                 alt="Romy Salomons"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
