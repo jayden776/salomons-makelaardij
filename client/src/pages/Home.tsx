@@ -141,10 +141,9 @@ export default function Home() {
       {/* HERO SECTION */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
-          {/* landing page hero dark harbor boats landscape */}
           <img
-            src="https://images.unsplash.com/photo-1528127269322-539801943592?w=1600&q=80"
-            alt="Den Helder Harbor"
+            src="/hero-bg.jpg"
+            alt="Den Helder Haven"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-[#0F172A]/60" />
