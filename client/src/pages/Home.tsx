@@ -135,7 +135,7 @@ export default function Home() {
                 onClick={() => scrollTo(item.id)}
                 className={`text-sm tracking-wider font-medium transition-all duration-300 border-b-2 py-1 ${
                   activeSection === item.id 
-                    ? "text-primary border-primary" 
+                    ? "text-[#1B2A44] border-[#1B2A44]" 
                     : "text-white/80 border-transparent hover:text-white"
                 }`}
               >
