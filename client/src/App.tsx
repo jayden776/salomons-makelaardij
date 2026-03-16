@@ -7,6 +7,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Taxatie from "@/pages/Taxatie";
 import Privacyverklaring from "@/pages/Privacyverklaring";
+import CookieBanner from "@/components/CookieBanner";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <CookieBanner />
       </TooltipProvider>
     </QueryClientProvider>
   );
