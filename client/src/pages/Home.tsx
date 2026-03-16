@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Check, Mail, MapPin, Phone, X } from "lucide-react";
@@ -22,20 +23,7 @@ import {
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [whatsappOpen, setWhatsappOpen] = useState(false);
-  const nwwiRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
-
-  useEffect(() => {
-    if (!nwwiRef.current || nwwiRef.current.childElementCount > 0) return;
-    const widget = document.createElement("nwwi-widget");
-    widget.setAttribute("data-color", "#f0f2f600");
-    widget.setAttribute("data-font", "Montserrat,sans-serif");
-    widget.setAttribute("data-company", "179435");
-    const script = document.createElement("script");
-    script.src = "https://aanvraag.nwwi.nl/_next/static/widgets/nwwi-widget/index.js";
-    widget.appendChild(script);
-    nwwiRef.current.appendChild(widget);
-  }, []);
   const submitContact = useSubmitContact();
 
   const form = useForm<InsertContact>({
@@ -455,15 +443,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NWWI WIDGET SECTION */}
-      <section className="py-16 px-6 bg-secondary/20">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-serif text-foreground text-center mb-2">Taxatie aanvragen</h2>
-          <div className="w-12 h-1 bg-primary mx-auto mb-10" />
-          <div ref={nwwiRef} className="w-full min-h-[200px]" />
-        </div>
-      </section>
-
       {/* FOOTER */}
       <footer className="bg-[#0F172A] py-10 text-center text-white/50 text-sm">
         <div className="max-w-4xl mx-auto px-6">
@@ -524,7 +503,15 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="border-t border-white/10 pt-6">
+          <div className="border-t border-white/10 pt-6 flex flex-col items-center gap-3">
+            <div className="flex flex-wrap justify-center gap-6 text-white/40 text-xs">
+              <Link href="/taxatie" className="hover:text-white/70 transition-colors">
+                Taxatierapport aanvragen
+              </Link>
+              <Link href="/privacyverklaring" className="hover:text-white/70 transition-colors">
+                Privacyverklaring
+              </Link>
+            </div>
             <p>&copy; {new Date().getFullYear()} Salomons Makelaardij. Alle rechten voorbehouden.</p>
           </div>
         </div>
