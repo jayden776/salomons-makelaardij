@@ -116,22 +116,15 @@ export default function Home() {
       {/* HEADER */}
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#C0694A]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div
-            className="cursor-pointer w-12 h-12 rounded-full bg-[#1B2A44] shadow-md overflow-hidden relative"
+          <div 
+            className="cursor-pointer" 
             onClick={() => scrollTo("hero")}
-            data-testid="logo-home"
           >
             <img
               src="/salomons-logo-transparent.png"
               alt="Salomons Makelaardij"
-              style={{
-                position: "absolute",
-                width: "300px",
-                left: "2px",
-                top: "50%",
-                transform: "translateY(-50%)",
-                filter: "brightness(0) invert(1)",
-              }}
+              className="h-14 w-auto"
+              style={{ mixBlendMode: "screen" }}
             />
           </div>
 
