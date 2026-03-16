@@ -212,7 +212,7 @@ export default function Home() {
           <div className="order-2 md:order-1 flex justify-center">
             <div
               className="relative w-64 md:w-72 aspect-[3/4] overflow-hidden shadow-2xl"
-              style={{ borderRadius: "50% 50% 30px 30px / 40% 40% 30px 30px" }}
+              style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
             >
               <img
                 src="/romy-salomons.jpg"
