@@ -122,7 +122,7 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo-colored.png"
+              src="/salomons-logo-colored.png?v=3"
               alt="Salomons Makelaardij"
               className="h-12 w-auto"
             />
