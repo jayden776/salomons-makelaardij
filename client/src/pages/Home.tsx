@@ -210,7 +210,10 @@ export default function Home() {
       <section id="over-mij" className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="order-2 md:order-1 flex justify-center">
-            <div className="relative w-64 md:w-72 aspect-[3/4] overflow-hidden rounded-3xl shadow-2xl">
+            <div
+              className="relative w-64 md:w-72 aspect-[3/4] overflow-hidden shadow-2xl"
+              style={{ borderRadius: "50% 50% 30px 30px / 40% 40% 30px 30px" }}
+            >
               <img
                 src="/romy-salomons.jpg"
                 alt="Romy Salomons"
