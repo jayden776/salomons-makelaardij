@@ -22,6 +22,7 @@ import {
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
+  const [scrolled, setScrolled] = useState(false);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
   const { toast } = useToast();
   const submitContact = useSubmitContact();
@@ -37,7 +38,7 @@ export default function Home() {
     },
   });
 
-  // Handle active nav state on scroll
+  // Handle active nav state and header transparency on scroll
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["hero", "over-mij", "diensten", "werkgebied", "contact"];
@@ -49,6 +50,11 @@ export default function Home() {
         }
       }
       setActiveSection(current);
+
+      const hero = document.getElementById("hero");
+      if (hero) {
+        setScrolled(window.scrollY > hero.offsetHeight - 80);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -108,7 +114,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/20">
       {/* HEADER */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#1B2A44]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1B2A44]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
             className="cursor-pointer" 
