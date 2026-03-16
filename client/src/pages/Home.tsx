@@ -118,7 +118,7 @@ export default function Home() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#C0694A]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
-            className="cursor-pointer bg-[#1B2A44] px-4 py-2 rounded-lg" 
+            className="cursor-pointer" 
             onClick={() => scrollTo("hero")}
           >
             <img
@@ -435,6 +435,7 @@ export default function Home() {
 
             {/* LEFT – contact */}
             <div className="flex flex-col gap-3 items-center md:items-start">
+              <p className="text-white font-serif text-lg tracking-wide">Contact</p>
               <a
                 href="tel:0223234040"
                 data-testid="link-footer-phone"
@@ -482,7 +483,7 @@ export default function Home() {
                 className="opacity-60 hover:opacity-100 transition-opacity"
                 title="VastgoedCert"
               >
-                <img src="/vastgoedcert-logo.png" alt="VastgoedCert" className="h-12 w-auto brightness-0 invert" />
+                <img src="/vastgoedcert-logo.png" alt="VastgoedCert" className="h-16 w-auto brightness-0 invert" />
               </a>
               <a
                 href="https://www.nrvt.nl/voor-opdrachtgevers/zoek-een-register-taxateur/taxateur/10760"
@@ -492,7 +493,7 @@ export default function Home() {
                 className="opacity-60 hover:opacity-100 transition-opacity"
                 title="NRVT"
               >
-                <img src="/nrvt-logo.svg" alt="NRVT" className="h-9 w-auto brightness-0 invert" />
+                <img src="/nrvt-logo.svg" alt="NRVT" className="h-14 w-auto brightness-0 invert" />
               </a>
               <a
                 href="https://www.linkedin.com/in/romysalomons?originalSubdomain=nl"
