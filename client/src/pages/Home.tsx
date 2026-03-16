@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Check, Mail, MapPin, Phone, X } from "lucide-react";
@@ -24,6 +24,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [scrolled, setScrolled] = useState(false);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
+  const [, setLocation] = useLocation();
   const { toast } = useToast();
   const submitContact = useSubmitContact();
 
@@ -165,24 +166,18 @@ export default function Home() {
             </span>
           </h1>
 
-          <div className="mt-8 flex items-center justify-center gap-2 text-white/80 text-sm md:text-base tracking-widest uppercase">
-            {navItems.map((item, i) => (
-              <span key={item.id} className="flex items-center gap-2">
-                <button 
-                  onClick={() => scrollTo(item.id)}
-                  className="hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </button>
-                {i < navItems.length - 1 && <span className="text-primary">•</span>}
-              </span>
-            ))}
+          <div className="mt-8 flex items-center justify-center gap-3 text-white/80 text-sm md:text-base tracking-widest uppercase">
+            <span>NRVT geregistreerd</span>
+            <span className="text-primary">•</span>
+            <span>Onafhankelijk</span>
+            <span className="text-primary">•</span>
+            <span>Persoonlijk</span>
           </div>
 
           <div className="mt-12">
             <Button 
               size="lg" 
-              onClick={() => scrollTo("contact")}
+              onClick={() => setLocation("/taxatie")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-none tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
             >
               Taxatie aanvragen
