@@ -159,12 +159,12 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/70 via-transparent to-transparent" />
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <div className="relative z-10 text-left px-12 md:px-20 w-full mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight font-serif" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.8)" }}>
             onafhankelijke woningtaxaties in den helder en de kop van noord-holland
           </h1>
 
-          <div className="mt-8 flex items-center justify-center gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
+          <div className="mt-8 flex items-center justify-start gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
             <span>NRVT geregistreerd</span>
             <span className="text-primary text-lg">•</span>
             <span>Onafhankelijk</span>
@@ -172,7 +172,7 @@ export default function Home() {
             <span>Persoonlijk</span>
           </div>
 
-          <div className="mt-10">
+          <div className="mt-10 flex justify-start">
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
