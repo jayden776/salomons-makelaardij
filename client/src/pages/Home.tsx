@@ -320,7 +320,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Naam</FormLabel>
                             <FormControl>
-                              <Input placeholder="Uw volledige naam" className="bg-background" {...field} />
+                              <Input placeholder="Uw volledige naam" className="bg-white rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -333,7 +333,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">E-mail</FormLabel>
                             <FormControl>
-                              <Input type="email" placeholder="uw@email.nl" className="bg-background" {...field} />
+                              <Input type="email" placeholder="uw@email.nl" className="bg-white rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -349,7 +349,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Telefoonnummer</FormLabel>
                             <FormControl>
-                              <Input type="tel" placeholder="06 12345678" className="bg-background" {...field} />
+                              <Input type="tel" placeholder="06 12345678" className="bg-white rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -362,7 +362,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Plaats te taxeren woning</FormLabel>
                             <FormControl>
-                              <Input placeholder="bijv. Den Helder" className="bg-background" {...field} />
+                              <Input placeholder="bijv. Den Helder" className="bg-white rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -379,7 +379,7 @@ export default function Home() {
                           <FormControl>
                             <Textarea 
                               placeholder="Geef hier een korte omschrijving van uw situatie..." 
-                              className="min-h-[120px] bg-background resize-none" 
+                              className="min-h-[120px] bg-white rounded-lg resize-none" 
                               {...field} 
                             />
                           </FormControl>
@@ -396,7 +396,7 @@ export default function Home() {
                         type="submit" 
                         size="lg" 
                         disabled={submitContact.isPending}
-                        className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground rounded-none px-8 shadow-lg hover:shadow-xl transition-all"
+                        className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 shadow-lg hover:shadow-xl transition-all"
                       >
                         {submitContact.isPending ? "Verzenden..." : "Verstuur aanvraag"}
                       </Button>
