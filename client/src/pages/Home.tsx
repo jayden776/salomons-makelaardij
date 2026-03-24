@@ -154,15 +154,15 @@ export default function Home() {
             alt="Den Helder Haven"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-[#0F172A]/35" />
+          <div className="absolute inset-0 bg-[#0F172A]/55" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-lg font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-[#F5EFE6] leading-tight drop-shadow-lg font-serif">
             onafhankelijke woningtaxaties in den helder en de kop van noord-holland
           </h1>
 
-          <div className="mt-8 flex items-center justify-center gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase drop-shadow-lg">
+          <div className="mt-8 flex items-center justify-center gap-3 text-[#F5EFE6] font-semibold text-sm md:text-base tracking-widest uppercase drop-shadow-lg">
             <span>NRVT geregistreerd</span>
             <span className="text-primary text-lg">•</span>
             <span>Onafhankelijk</span>
