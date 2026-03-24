@@ -179,7 +179,7 @@ export default function Home() {
               onClick={() => setLocation("/taxatie")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-none tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
             >
-              Taxatie aanvragen
+              Neem contact op
             </Button>
           </div>
         </div>
