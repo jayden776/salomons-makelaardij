@@ -164,7 +164,7 @@ export default function Home() {
             onafhankelijke woningtaxaties in den helder en de kop van noord-holland
           </h1>
 
-          <div className="mt-8 flex items-center justify-start gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
+          <div className="mt-8 flex items-center justify-center gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
             <span>NRVT geregistreerd</span>
             <span className="text-primary text-lg">•</span>
             <span>Onafhankelijk</span>
