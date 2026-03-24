@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-24 px-6 bg-secondary/30">
+      <section id="contact" className="py-24 px-6 bg-[#F5EFE6]">
         <div className="max-w-6xl mx-auto">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
