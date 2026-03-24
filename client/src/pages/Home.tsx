@@ -177,7 +177,7 @@ export default function Home() {
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-none tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
             >
               Neem contact op
             </Button>
