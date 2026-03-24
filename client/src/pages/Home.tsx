@@ -320,7 +320,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Naam</FormLabel>
                             <FormControl>
-                              <Input placeholder="Uw volledige naam" className="bg-white rounded-lg" {...field} />
+                              <Input placeholder="Uw volledige naam" className="bg-white !rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -333,7 +333,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">E-mail</FormLabel>
                             <FormControl>
-                              <Input type="email" placeholder="uw@email.nl" className="bg-white rounded-lg" {...field} />
+                              <Input type="email" placeholder="uw@email.nl" className="bg-white !rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -349,7 +349,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Telefoonnummer</FormLabel>
                             <FormControl>
-                              <Input type="tel" placeholder="06 12345678" className="bg-white rounded-lg" {...field} />
+                              <Input type="tel" placeholder="06 12345678" className="bg-white !rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -362,7 +362,7 @@ export default function Home() {
                           <FormItem>
                             <FormLabel className="text-foreground">Plaats te taxeren woning</FormLabel>
                             <FormControl>
-                              <Input placeholder="bijv. Den Helder" className="bg-white rounded-lg" {...field} />
+                              <Input placeholder="bijv. Den Helder" className="bg-white !rounded-lg" {...field} />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
