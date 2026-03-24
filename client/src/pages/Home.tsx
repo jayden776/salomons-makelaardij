@@ -115,7 +115,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/20">
       {/* HEADER */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#C0694A]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1B2A44]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
             className="cursor-pointer" 
