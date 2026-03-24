@@ -165,11 +165,9 @@ export default function Home() {
             </span>
           </h1>
 
-          <div className="mt-8 flex items-center justify-start gap-4 text-white font-semibold text-sm md:text-base tracking-widest uppercase drop-shadow-md">
+          <div className="mt-8 flex flex-col gap-2 text-white font-semibold text-sm md:text-base tracking-widest uppercase drop-shadow-md">
             <span>NRVT geregistreerd</span>
-            <span className="text-primary">•</span>
             <span>Onafhankelijk</span>
-            <span className="text-primary">•</span>
             <span>Persoonlijk</span>
           </div>
 
