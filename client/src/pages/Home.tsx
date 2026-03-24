@@ -159,10 +159,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight drop-shadow-lg font-serif">
-            Onafhankelijke woningtaxaties
-            <span className="block mt-2 text-4xl md:text-5xl lg:text-6xl text-white">
-              in Den Helder en de Kop van Noord-Holland
-            </span>
+            onafhankelijke woningtaxaties in den helder en de kop van noord-holland
           </h1>
 
           <div className="mt-8 flex items-center justify-center gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase drop-shadow-lg">
