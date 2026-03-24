@@ -235,7 +235,7 @@ export default function Home() {
 
       {/* WHY CHOOSE SECTION */}
       <section id="waarom-kiezen" className="py-24 px-6 bg-[#1B2A44] text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+        <div className="max-w-3xl mx-auto relative z-10">
           <div className="space-y-12">
             <h2 className="text-4xl font-serif leading-tight">
               Waarom kiezen voor<br />
@@ -251,22 +251,6 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-          </div>
-          
-          <div className="flex items-center justify-center">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 w-full max-w-md">
-              <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=4.4,52.5,5.3,53.1&layer=mapnik&marker=52.9563,4.7601"
-                width="100%"
-                height="420"
-                style={{ border: 0, display: "block" }}
-                title="Kaart Noord-Holland – Den Helder"
-                loading="lazy"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-[#1B2A44]/80 backdrop-blur-sm px-4 py-3 text-center">
-                <p className="text-white text-sm font-medium tracking-wide">Werkgebied: Den Helder & Kop van Noord-Holland</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
