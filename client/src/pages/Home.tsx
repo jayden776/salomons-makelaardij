@@ -156,6 +156,7 @@ export default function Home() {
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-[#0F172A]/35" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/70 via-transparent to-transparent" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
