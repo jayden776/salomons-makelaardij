@@ -172,7 +172,7 @@ export default function Home() {
             <span>Persoonlijk</span>
           </div>
 
-          <div className="mt-10 flex justify-start">
+          <div className="mt-10 flex justify-center">
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
