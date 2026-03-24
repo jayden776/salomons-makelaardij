@@ -212,24 +212,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIENSTEN SECTION */}
+      {/* DIENSTEN & WERKGEBIED SECTION */}
       <section id="diensten" className="py-24 px-6 bg-white/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mt-4" />
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, i) => (
-              <Card key={i} className="border-border/50 shadow-sm hover:shadow-md transition-shadow bg-card">
-                <CardContent className="p-8 flex items-center gap-4">
-                  <div className="w-3 h-3 rotate-45 bg-primary shrink-0" />
-                  <span className="text-lg font-medium text-card-foreground">{service}</span>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+        <span id="werkgebied" className="block -mt-24 pt-24" />
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl text-foreground font-serif">Diensten & Werkgebied</h2>
+          <div className="w-24 h-1 bg-primary mx-auto mt-4 mb-10" />
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Salomons Makelaardij verzorgt onafhankelijke woningtaxaties voor uiteenlopende situaties — van <strong className="text-foreground font-semibold">aankoop</strong> en <strong className="text-foreground font-semibold">hypotheekaanvraag</strong> tot het <strong className="text-foreground font-semibold">oversluiten van een hypotheek</strong>, <strong className="text-foreground font-semibold">waardebepaling</strong>, <strong className="text-foreground font-semibold">echtscheiding</strong> of <strong className="text-foreground font-semibold">nalatenschap</strong>.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+            Actief in <strong className="text-foreground font-semibold">Den Helder</strong> en de omliggende plaatsen zoals Julianadorp, Schagen, Anna Paulowna en Hollands Kroon — binnen een straal van circa 20 km.
+          </p>
         </div>
       </section>
 
@@ -253,15 +247,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </section>
-
-      {/* WERKGEBIED SECTION */}
-      <section id="werkgebied" className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
-        <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-8" />
-        <p className="text-xl text-muted-foreground leading-relaxed">
-          Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
-        </p>
       </section>
 
       {/* CONTACT SECTION */}
