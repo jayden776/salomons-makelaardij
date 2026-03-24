@@ -176,7 +176,7 @@ export default function Home() {
           <div className="mt-12">
             <Button 
               size="lg" 
-              onClick={() => setLocation("/taxatie")}
+              onClick={() => scrollTo("contact")}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-none tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
             >
               Neem contact op
