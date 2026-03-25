@@ -246,8 +246,8 @@ export default function Home() {
             </div>
             <div className="rounded-xl overflow-hidden h-48 md:h-60 shadow-md border border-border/30">
               <img
-                src="/werkgebied-kaart.png"
-                alt="Werkgebied Kop van Noord-Holland"
+                src="/den-helder.png"
+                alt="Den Helder - Kop van Noord-Holland"
                 className="w-full h-full object-cover"
               />
             </div>
