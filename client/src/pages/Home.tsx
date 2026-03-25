@@ -204,8 +204,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIENSTEN SECTION */}
+      {/* DIENSTEN + WERKGEBIED SECTION */}
       <section id="diensten" className="py-24 px-6 bg-white/50">
+        <span id="werkgebied" />
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
@@ -221,16 +222,15 @@ export default function Home() {
               </Card>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* WERKGEBIED SECTION */}
-      <section id="werkgebied" className="py-24 px-6 max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
-        <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-8" />
-        <p className="text-xl text-muted-foreground leading-relaxed">
-          Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
-        </p>
+          <div className="text-center mt-16 pt-16 border-t border-border/40">
+            <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
+            <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-8" />
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* CONTACT SECTION */}
