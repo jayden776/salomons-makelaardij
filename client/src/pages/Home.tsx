@@ -214,10 +214,10 @@ export default function Home() {
                 De doorlooptijd bedraagt maximaal 10 werkdagen na opname van de woning. Als NRVT-geregistreerd taxateur werk ik volgens de geldende richtlijnen en met kennis van de lokale woningmarkt.
               </p>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg border border-border/30 h-[420px]">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-border/30 h-[560px]">
               <img
-                src="/den-helder.png"
-                alt="Den Helder - Kop van Noord-Holland"
+                src="/noordzee.png"
+                alt="Noordzee - Den Helder"
                 className="w-full h-full object-cover"
               />
             </div>
