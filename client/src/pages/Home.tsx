@@ -155,20 +155,13 @@ export default function Home() {
             <span>Persoonlijk</span>
           </div>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-10 flex justify-center">
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
             >
               Neem contact op
-            </Button>
-            <Button
-              size="lg"
-              onClick={() => setLocation("/taxatie")}
-              className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap focus-visible:ring-0 focus-visible:ring-offset-0"
-            >
-              Taxatierapport aanvragen
             </Button>
           </div>
         </div>
