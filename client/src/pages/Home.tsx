@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ChevronDown, Mail, MapPin, Phone, X } from "lucide-react";
+import { Mail, MapPin, Phone, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { useSubmitContact } from "@/hooks/use-contact";
@@ -92,17 +92,6 @@ export default function Home() {
     { id: "over-mij", label: "OVER MIJ" },
     { id: "diensten", label: "DIENSTEN" },
     { id: "contact", label: "CONTACT" },
-  ];
-
-  const [selectedService, setSelectedService] = useState<number | null>(null);
-
-  const services = [
-    { naam: "Aankoop woning", uitleg: "Bij het kopen van een woning is een taxatierapport vaak verplicht voor de hypotheekverstrekker. Ik stel een gevalideerd rapport op dat voldoet aan alle eisen." },
-    { naam: "Hypotheekaanvraag", uitleg: "Voor het aanvragen van een hypotheek is een onafhankelijke taxatie vereist. Het rapport wordt opgesteld volgens de NWWI-normen." },
-    { naam: "Oversluiten hypotheek", uitleg: "Wilt u uw hypotheek oversluiten naar een andere aanbieder? Dan is een nieuwe taxatie nodig om de actuele waarde van uw woning te bepalen." },
-    { naam: "Waardebepaling", uitleg: "Een indicatieve waardebepaling geeft inzicht in de marktwaarde van uw woning, zonder uitgebreid rapport — handig als oriëntatie." },
-    { naam: "Echtscheiding", uitleg: "Bij een scheiding moet de waarde van de woning objectief worden vastgesteld. Ik lever een onpartijdig taxatierapport dat door beide partijen geaccepteerd wordt." },
-    { naam: "Nalatenschap", uitleg: "Voor de verdeling van een erfenis of aangifte erfbelasting is een taxatie van de woning nodig. Ik verzorg dit snel en zorgvuldig." },
   ];
 
   return (
@@ -205,46 +194,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIENSTEN + WERKGEBIED SECTION */}
+      {/* DIENSTEN SECTION */}
       <section id="diensten" className="min-h-screen flex items-center py-24 px-6 bg-white/50">
         <span id="werkgebied" />
         <div className="max-w-7xl mx-auto w-full">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
-            <div className="w-24 h-1 bg-primary mx-auto mt-4" />
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-20 items-start">
-            {services.map((service, i) => (
-              <Card
-                key={i}
-                onClick={() => setSelectedService(selectedService === i ? null : i)}
-                className={`border-border/50 shadow-sm hover:shadow-md transition-all cursor-pointer bg-card ${selectedService === i ? "ring-2 ring-primary" : ""}`}
-              >
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 rotate-45 shrink-0 bg-primary" />
-                    <span className="text-base font-medium text-card-foreground flex-1">{service.naam}</span>
-                    <ChevronDown className={`w-4 h-4 text-muted-foreground shrink-0 transition-transform duration-200 ${selectedService === i ? "rotate-180" : ""}`} />
-                  </div>
-                  {selectedService === i && (
-                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed border-t border-border/40 pt-3">
-                      {service.uitleg}
-                    </p>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <div>
-              <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
-              <div className="w-16 h-1 bg-primary mt-4 mb-6" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
+                <div className="w-16 h-1 bg-primary mt-4" />
+              </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
+                Voor een woningtaxatie in Den Helder en de Kop van Noord-Holland kunt u bij mij terecht voor een zorgvuldig en onafhankelijk taxatierapport. Of het nu gaat om de aankoop van een woning, een hypotheekaanvraag of een verbouwing, iedere situatie vraagt om maatwerk en een persoonlijke benadering.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Na akkoord kom ik bij u langs om de woning op te nemen en uw situatie te bespreken. Vervolgens werk ik de taxatie zorgvuldig uit. Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI), waarna u een gevalideerd taxatierapport ontvangt dat wordt geaccepteerd door geldverstrekkers.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                De doorlooptijd bedraagt maximaal 10 werkdagen na opname van de woning. Als NRVT-geregistreerd taxateur werk ik volgens de geldende richtlijnen en met kennis van de lokale woningmarkt.
               </p>
             </div>
-            <div className="rounded-xl overflow-hidden h-48 md:h-60 shadow-md border border-border/30">
+            <div className="rounded-xl overflow-hidden shadow-lg border border-border/30 h-[420px]">
               <img
                 src="/den-helder.png"
                 alt="Den Helder - Kop van Noord-Holland"
