@@ -155,7 +155,7 @@ export default function Home() {
             <span>Persoonlijk</span>
           </div>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
@@ -163,6 +163,15 @@ export default function Home() {
             >
               Neem contact op
             </Button>
+            <Link href="/taxatie">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white/10 hover:bg-white/20 text-white border-white/60 hover:border-white px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 backdrop-blur-sm"
+              >
+                Taxatierapport aanvragen
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
