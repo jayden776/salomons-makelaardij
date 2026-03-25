@@ -244,8 +244,12 @@ export default function Home() {
                 Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
               </p>
             </div>
-            <div className="rounded-xl overflow-hidden h-48 md:h-60 bg-muted flex items-center justify-center text-muted-foreground text-sm">
-              Afbeelding volgt
+            <div className="rounded-xl overflow-hidden h-48 md:h-60 shadow-md">
+              <img
+                src="/kop-van-noord-holland.png"
+                alt="Kop van Noord-Holland"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
