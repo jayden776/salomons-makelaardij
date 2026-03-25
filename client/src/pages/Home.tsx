@@ -207,25 +207,25 @@ export default function Home() {
       <section id="diensten" className="min-h-screen flex items-center py-24 px-6 bg-white/50">
         <span id="werkgebied" />
         <div className="max-w-7xl mx-auto w-full">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {services.map((service, i) => (
               <Card key={i} className="border-border/50 shadow-sm hover:shadow-md transition-shadow bg-card">
-                <CardContent className="p-8 flex items-center gap-4">
-                  <div className="w-3 h-3 rotate-45 bg-primary shrink-0" />
-                  <span className="text-lg font-medium text-card-foreground">{service}</span>
+                <CardContent className="p-4 flex items-center gap-3">
+                  <div className="w-2 h-2 rotate-45 bg-primary shrink-0" />
+                  <span className="text-sm font-medium text-card-foreground">{service}</span>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-16 pt-16 border-t border-border/40">
+          <div className="text-center mt-10">
             <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
-            <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-8" />
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-6" />
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
             </p>
           </div>
