@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* OVER MIJ SECTION */}
-      <section id="over-mij" className="pt-24 pb-0 overflow-hidden">
+      <section id="over-mij" className="pt-24 pb-0 overflow-hidden min-h-screen">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
           <div className="order-2 md:order-1 flex justify-center items-end">
             <div
