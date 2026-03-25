@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Check, Mail, MapPin, Phone, X } from "lucide-react";
+import { Mail, MapPin, Phone, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { useSubmitContact } from "@/hooks/use-contact";
@@ -102,14 +102,6 @@ export default function Home() {
     "Waardebepaling",
     "Echtscheiding",
     "Nalatenschap",
-  ];
-
-  const reasons = [
-    "NRVT geregistreerd",
-    "Onafhankelijk",
-    "Lokale marktkennis",
-    "Snel beschikbaar",
-    "Persoonlijk contact",
   ];
 
   return (
@@ -239,28 +231,6 @@ export default function Home() {
         <p className="text-xl text-muted-foreground leading-relaxed">
           Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
         </p>
-      </section>
-
-      {/* WHY CHOOSE SECTION */}
-      <section id="waarom-kiezen" className="py-24 px-6 bg-[#1B2A44] text-white overflow-hidden relative">
-        <div className="max-w-3xl mx-auto relative z-10">
-          <div className="space-y-12">
-            <h2 className="text-4xl font-serif leading-tight">
-              Waarom kiezen voor<br />
-              <span className="text-primary">Salomons Makelaardij?</span>
-            </h2>
-            <ul className="space-y-6">
-              {reasons.map((reason, i) => (
-                <li key={i} className="flex items-center gap-4 text-xl">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
-                    <Check className="w-5 h-5 text-primary" />
-                  </div>
-                  <span className="text-white/90">{reason}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
       </section>
 
       {/* CONTACT SECTION */}
