@@ -207,27 +207,32 @@ export default function Home() {
       <section id="diensten" className="min-h-screen flex items-center py-24 px-6 bg-white/50">
         <span id="werkgebied" />
         <div className="max-w-7xl mx-auto w-full">
-          <div className="text-center mb-8">
+          <div className="text-center mb-10">
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-14">
             {services.map((service, i) => (
               <Card key={i} className="border-border/50 shadow-sm hover:shadow-md transition-shadow bg-card">
-                <CardContent className="p-4 flex items-center gap-3">
-                  <div className="w-2 h-2 rotate-45 bg-primary shrink-0" />
-                  <span className="text-sm font-medium text-card-foreground">{service}</span>
+                <CardContent className="p-6 flex items-center gap-3">
+                  <div className="w-3 h-3 rotate-45 bg-primary shrink-0" />
+                  <span className="text-base font-medium text-card-foreground">{service}</span>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
-            <div className="w-16 h-1 bg-primary mx-auto mt-4 mb-6" />
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h2 className="text-4xl text-foreground font-serif">Werkgebied</h2>
+              <div className="w-16 h-1 bg-primary mt-4 mb-6" />
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Actief in Den Helder en omliggende plaatsen binnen een straal van circa 20 km, waaronder Julianadorp, Schagen, Anna Paulowna en Hollands Kroon.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden h-48 md:h-60 bg-muted flex items-center justify-center text-muted-foreground text-sm">
+              Afbeelding volgt
+            </div>
           </div>
         </div>
       </section>
