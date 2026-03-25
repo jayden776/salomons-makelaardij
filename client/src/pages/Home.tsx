@@ -186,12 +186,12 @@ export default function Home() {
       </section>
 
       {/* OVER MIJ SECTION */}
-      <section id="over-mij" className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="order-2 md:order-1 flex justify-center">
+      <section id="over-mij" className="pt-24 pb-0 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
+          <div className="order-2 md:order-1 flex justify-center items-end">
             <div
-              className="relative w-64 md:w-72 aspect-[3/4] overflow-hidden shadow-2xl"
-              style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
+              className="relative w-64 md:w-80 overflow-hidden shadow-2xl"
+              style={{ borderRadius: "50% 50% 0 0 / 20% 20% 0 0", aspectRatio: "3/4" }}
             >
               <img
                 src="/romy-salomons.jpg"
@@ -200,7 +200,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6">
+          <div className="order-1 md:order-2 space-y-6 pb-24">
             <div>
               <h2 className="text-4xl text-foreground font-serif">Over Romy Salomons</h2>
               <div className="w-16 h-1 bg-primary mt-4" />
