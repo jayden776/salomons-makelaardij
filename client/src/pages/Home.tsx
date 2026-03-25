@@ -116,10 +116,10 @@ export default function Home() {
                 key={item.id}
                 onClick={() => scrollTo(item.id)}
                 style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}
-                className={`text-base tracking-widest font-semibold transition-all duration-300 border-b-2 py-1 ${
+                className={`text-base tracking-widest font-semibold transition-all duration-300 py-1 ${
                   activeSection === item.id 
-                    ? "text-primary border-primary" 
-                    : "text-white/80 border-transparent hover:text-white"
+                    ? "text-primary" 
+                    : "text-white/80 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -155,13 +155,20 @@ export default function Home() {
             <span>Persoonlijk</span>
           </div>
 
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap"
             >
               Neem contact op
+            </Button>
+            <Button
+              size="lg"
+              onClick={() => setLocation("/taxatie")}
+              className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
+              Taxatierapport aanvragen
             </Button>
           </div>
         </div>
