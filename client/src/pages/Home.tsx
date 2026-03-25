@@ -42,7 +42,7 @@ export default function Home() {
   // Handle active nav state and header transparency on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "over-mij", "diensten", "werkgebied", "contact"];
+      const sections = ["hero", "over-mij", "diensten", "contact"];
       let current = "";
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -91,7 +91,6 @@ export default function Home() {
   const navItems = [
     { id: "over-mij", label: "OVER MIJ" },
     { id: "diensten", label: "DIENSTEN" },
-    { id: "werkgebied", label: "WERKGEBIED" },
     { id: "contact", label: "CONTACT" },
   ];
 
@@ -205,9 +204,9 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN + WERKGEBIED SECTION */}
-      <section id="diensten" className="py-24 px-6 bg-white/50">
+      <section id="diensten" className="min-h-screen flex items-center py-24 px-6 bg-white/50">
         <span id="werkgebied" />
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
