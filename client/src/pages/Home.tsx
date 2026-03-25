@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Mail, MapPin, Phone, X } from "lucide-react";
+import { ChevronDown, Mail, MapPin, Phone, X } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { insertContactSchema, type InsertContact } from "@shared/schema";
 import { useSubmitContact } from "@/hooks/use-contact";
@@ -221,9 +221,10 @@ export default function Home() {
                 className={`border-border/50 shadow-sm hover:shadow-md transition-all cursor-pointer bg-card ${selectedService === i ? "ring-2 ring-primary" : ""}`}
               >
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-0">
+                  <div className="flex items-center gap-3">
                     <div className="w-3 h-3 rotate-45 shrink-0 bg-primary" />
-                    <span className="text-base font-medium text-card-foreground">{service.naam}</span>
+                    <span className="text-base font-medium text-card-foreground flex-1">{service.naam}</span>
+                    <ChevronDown className={`w-4 h-4 text-muted-foreground shrink-0 transition-transform duration-200 ${selectedService === i ? "rotate-180" : ""}`} />
                   </div>
                   {selectedService === i && (
                     <p className="mt-3 text-sm text-muted-foreground leading-relaxed border-t border-border/40 pt-3">
