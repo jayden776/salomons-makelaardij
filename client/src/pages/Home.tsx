@@ -167,7 +167,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white/10 hover:bg-white/20 text-white border-white/60 hover:border-white px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 backdrop-blur-sm"
+                className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white border-transparent px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
               >
                 Taxatierapport aanvragen
               </Button>
