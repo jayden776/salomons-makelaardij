@@ -163,14 +163,13 @@ export default function Home() {
             >
               Neem contact op
             </Button>
-            <Link href="/taxatie">
-              <Button
-                size="lg"
-                className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white border-0 px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                Taxatierapport aanvragen
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              onClick={() => setLocation("/taxatie")}
+              className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white border-0 px-6 py-3 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
+              Taxatierapport aanvragen
+            </Button>
           </div>
         </div>
       </section>
