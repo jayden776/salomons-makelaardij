@@ -94,13 +94,15 @@ export default function Home() {
     { id: "contact", label: "CONTACT" },
   ];
 
+  const [selectedService, setSelectedService] = useState<number | null>(null);
+
   const services = [
-    "Aankoop woning",
-    "Hypotheekaanvraag",
-    "Oversluiten hypotheek",
-    "Waardebepaling",
-    "Echtscheiding",
-    "Nalatenschap",
+    { naam: "Aankoop woning", uitleg: "Bij het kopen van een woning is een taxatierapport vaak verplicht voor de hypotheekverstrekker. Ik stel een gevalideerd rapport op dat voldoet aan alle eisen." },
+    { naam: "Hypotheekaanvraag", uitleg: "Voor het aanvragen van een hypotheek is een onafhankelijke taxatie vereist. Het rapport wordt opgesteld volgens de NWWI-normen." },
+    { naam: "Oversluiten hypotheek", uitleg: "Wilt u uw hypotheek oversluiten naar een andere aanbieder? Dan is een nieuwe taxatie nodig om de actuele waarde van uw woning te bepalen." },
+    { naam: "Waardebepaling", uitleg: "Een indicatieve waardebepaling geeft inzicht in de marktwaarde van uw woning, zonder uitgebreid rapport — handig als oriëntatie." },
+    { naam: "Echtscheiding", uitleg: "Bij een scheiding moet de waarde van de woning objectief worden vastgesteld. Ik lever een onpartijdig taxatierapport dat door beide partijen geaccepteerd wordt." },
+    { naam: "Nalatenschap", uitleg: "Voor de verdeling van een erfenis of aangifte erfbelasting is een taxatie van de woning nodig. Ik verzorg dit snel en zorgvuldig." },
   ];
 
   return (
@@ -211,12 +213,23 @@ export default function Home() {
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-14">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-20">
             {services.map((service, i) => (
-              <Card key={i} className="border-border/50 shadow-sm hover:shadow-md transition-shadow bg-card">
-                <CardContent className="p-6 flex items-center gap-3">
-                  <div className="w-3 h-3 rotate-45 bg-primary shrink-0" />
-                  <span className="text-base font-medium text-card-foreground">{service}</span>
+              <Card
+                key={i}
+                onClick={() => setSelectedService(selectedService === i ? null : i)}
+                className={`border-border/50 shadow-sm hover:shadow-md transition-all cursor-pointer bg-card ${selectedService === i ? "ring-2 ring-primary" : ""}`}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-0">
+                    <div className="w-3 h-3 rotate-45 shrink-0 bg-primary" />
+                    <span className="text-base font-medium text-card-foreground">{service.naam}</span>
+                  </div>
+                  {selectedService === i && (
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed border-t border-border/40 pt-3">
+                      {service.uitleg}
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             ))}
