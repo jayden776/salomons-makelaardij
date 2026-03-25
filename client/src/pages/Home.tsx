@@ -213,7 +213,7 @@ export default function Home() {
             <h2 className="text-4xl text-foreground font-serif">Woningtaxaties voor</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-20">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-20 items-start">
             {services.map((service, i) => (
               <Card
                 key={i}
