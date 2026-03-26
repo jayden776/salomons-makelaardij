@@ -195,7 +195,13 @@ export default function Home() {
               <div className="w-16 h-1 bg-primary mt-4" />
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Als erkend NRVT taxateur wonen verzorg ik <strong className="text-foreground font-semibold">onafhankelijke</strong> en zorgvuldig onderbouwde taxaties in Den Helder en de Kop van Noord-Holland. <strong className="text-foreground font-semibold">Persoonlijk contact en duidelijke communicatie</strong> staan centraal in mijn werkwijze.
+              Als Register Taxateur Wonen zorg ik voor taxaties die kloppen en duidelijkheid geven. Geen standaard aanpak, maar aandacht voor de woning én de situatie waarin u zich bevindt.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Het vak heb ik in de praktijk geleerd bij Beerse Makelaardij. Daarnaast ben ik actief als makelaar bij Coltof Makelaardij, waardoor ik dagelijks betrokken ben bij de woningmarkt in de regio.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Mijn interesse in vastgoed ontstond tijdens mijn werk in Barcelona. Terug in Den Helder heb ik bewust gekozen om mij verder te specialiseren en heb ik mijn papieren behaald als Register Taxateur Wonen en KRMT-makelaar.
             </p>
           </div>
         </div>
