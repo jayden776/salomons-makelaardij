@@ -208,11 +208,11 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="min-h-screen flex items-center py-24 px-6 bg-white/50">
+      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
-        <div className="max-w-7xl mx-auto w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="flex-1 flex items-center py-24 px-10 lg:px-16">
+            <div className="max-w-xl space-y-6">
               <div>
                 <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
                 <div className="w-16 h-1 bg-primary mt-4" />
@@ -227,13 +227,13 @@ export default function Home() {
                 De doorlooptijd bedraagt maximaal 10 werkdagen na opname van de woning. Als NRVT-geregistreerd taxateur werk ik volgens de geldende richtlijnen en met kennis van de lokale woningmarkt.
               </p>
             </div>
-            <div className="rounded-xl overflow-hidden shadow-lg border border-border/30 h-[660px]">
-              <img
-                src="/noordzee.png"
-                alt="Noordzee - Den Helder"
-                className="w-full h-full object-cover"
-              />
-            </div>
+          </div>
+          <div className="flex-1 min-h-[400px]">
+            <img
+              src="/noordzee.png"
+              alt="Noordzee - Den Helder"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
