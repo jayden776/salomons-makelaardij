@@ -203,6 +203,12 @@ export default function Home() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Mijn interesse in vastgoed ontstond tijdens mijn werk in Barcelona. Terug in Den Helder heb ik bewust gekozen om mij verder te specialiseren en heb ik mijn papieren behaald als Register Taxateur Wonen en KRMT-makelaar.
             </p>
+            <Button
+              onClick={() => scrollTo("contact")}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base rounded-full tracking-wide shadow-md hover:shadow-lg transition-all hover:-translate-y-1 whitespace-nowrap"
+            >
+              Contact opnemen
+            </Button>
           </div>
         </div>
       </section>
@@ -226,6 +232,12 @@ export default function Home() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 De doorlooptijd bedraagt maximaal 10 werkdagen na opname van de woning. Als NRVT-geregistreerd taxateur werk ik volgens de geldende richtlijnen en met kennis van de lokale woningmarkt.
               </p>
+              <Button
+                onClick={() => scrollTo("contact")}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 text-base rounded-full tracking-wide shadow-md hover:shadow-lg transition-all hover:-translate-y-1 whitespace-nowrap"
+              >
+                Contact opnemen
+              </Button>
             </div>
           </div>
           <div className="flex-1 min-h-[400px]">
