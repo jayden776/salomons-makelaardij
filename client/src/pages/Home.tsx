@@ -159,14 +159,14 @@ export default function Home() {
             <Button 
               size="lg" 
               onClick={() => scrollTo("contact")}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-6 text-base rounded-full tracking-widest font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap"
             >
               Neem contact op
             </Button>
             <Button
               size="lg"
               onClick={() => setLocation("/taxatie")}
-              className="bg-[#1B2A44] hover:bg-[#1B2A44]/90 text-white h-12 px-6 text-base rounded-full tracking-wide shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-12 px-6 text-base rounded-full tracking-widest font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 whitespace-nowrap border-0 focus-visible:ring-0 focus-visible:ring-offset-0"
             >
               Taxatierapport aanvragen
             </Button>
