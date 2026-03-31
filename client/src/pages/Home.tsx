@@ -224,13 +224,19 @@ export default function Home() {
                 <div className="w-16 h-1 bg-primary mt-4" />
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Voor een woningtaxatie in Den Helder en de Kop van Noord-Holland kunt u bij mij terecht voor een zorgvuldig en onafhankelijk taxatierapport. Of het nu gaat om de aankoop van een woning, een hypotheekaanvraag of een verbouwing, iedere situatie vraagt om maatwerk en een persoonlijke benadering.
+                Een taxatie vraagt om zorgvuldigheid en kennis van de lokale markt. Ik verzorg onafhankelijke woningtaxaties die helder en goed onderbouwd zijn, bijvoorbeeld bij aankoop, (her)financiering, verbouwing, scheiding of nalatenschap. Iedere situatie vraagt om maatwerk en een persoonlijke benadering.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Na akkoord kom ik bij u langs om de woning op te nemen en uw situatie te bespreken. Vervolgens werk ik de taxatie zorgvuldig uit. Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI), waarna u een gevalideerd taxatierapport ontvangt dat wordt geaccepteerd door geldverstrekkers.
+                Na het maken van een afspraak kom ik bij u langs om de woning op te nemen en uw situatie te bespreken. Op basis daarvan werk ik de taxatie uit tot een inzichtelijk rapport, waarbij u kunt rekenen op een vlotte en zorgvuldige afhandeling.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                De doorlooptijd bedraagt maximaal 10 werkdagen na opname van de woning. Als NRVT-geregistreerd taxateur werk ik volgens de geldende richtlijnen en met kennis van de lokale woningmarkt.
+                Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI) en voldoet aan de geldende richtlijnen. U ontvangt een gevalideerd taxatierapport dat door geldverstrekkers wordt geaccepteerd en helder inzicht geeft in de totstandkoming van de waarde.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Als NRVT-geregistreerde taxateur ben ik actief in de Kop van Noord-Holland, in een straal van circa 20 kilometer rondom Den Helder, waaronder Julianadorp, Schagen, Callantsoog, Anna Paulowna, Wieringerwaard, Breezand, Hippolytushoef en Wieringerwerf.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Heeft u een taxatie nodig of wilt u overleggen? U bent van harte welkom om contact op te nemen.
               </p>
               <Button
                 onClick={() => scrollTo("contact")}
