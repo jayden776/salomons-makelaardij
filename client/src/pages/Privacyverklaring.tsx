@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 export default function Privacyverklaring() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <header className="bg-[#1B2A44] px-6 py-4 flex items-center gap-4">
+      <header className="bg-[#122939] px-6 py-4 flex items-center gap-4">
         <Link href="/" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-sm">
           <ArrowLeft className="w-4 h-4" />
           Terug naar home
