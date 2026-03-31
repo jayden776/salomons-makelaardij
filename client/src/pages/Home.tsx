@@ -270,6 +270,7 @@ export default function Home() {
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
                       className="w-full max-w-[220px] h-auto"
+                      style={{ mixBlendMode: "screen" }}
                     />
                   </div>
                   
