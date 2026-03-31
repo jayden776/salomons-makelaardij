@@ -104,7 +104,7 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo-colored.png"
+              src="/salomons-logo-header-transparent.png"
               alt="Salomons Makelaardij"
               className="h-16 w-auto"
             />
