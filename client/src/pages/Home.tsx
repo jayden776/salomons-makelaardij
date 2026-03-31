@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -23,6 +23,7 @@ import {
 export default function Home() {
   const [activeSection, setActiveSection] = useState<string>("");
   const [scrolled, setScrolled] = useState(false);
+  const scrollLockRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [whatsappOpen, setWhatsappOpen] = useState(false);
   const [, setLocation] = useLocation();
   const { toast } = useToast();
@@ -50,7 +51,9 @@ export default function Home() {
           current = section;
         }
       }
-      setActiveSection(current);
+      if (!scrollLockRef.current) {
+        setActiveSection(current);
+      }
 
       const hero = document.getElementById("hero");
       if (hero) {
@@ -64,6 +67,10 @@ export default function Home() {
 
   const scrollTo = (id: string) => {
     setActiveSection(id);
+    if (scrollLockRef.current) clearTimeout(scrollLockRef.current);
+    scrollLockRef.current = setTimeout(() => {
+      scrollLockRef.current = null;
+    }, 1000);
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
