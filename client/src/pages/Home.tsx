@@ -271,7 +271,7 @@ export default function Home() {
                       alt="Salomons Makelaardij"
                       className="w-full h-auto block"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 h-12" style={{ background: "linear-gradient(to bottom, transparent, #122939)" }} />
+                    <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 30%, #122939 80%)" }} />
                   </div>
                   
                   <div className="space-y-6">
