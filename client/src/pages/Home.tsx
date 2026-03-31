@@ -44,10 +44,15 @@ export default function Home() {
     const handleScroll = () => {
       const sections = ["hero", "over-mij", "diensten", "contact"];
       let current = "";
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element && window.scrollY >= element.offsetTop - 100) {
-          current = section;
+      const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80;
+      if (atBottom) {
+        current = "contact";
+      } else {
+        for (const section of sections) {
+          const element = document.getElementById(section);
+          if (element && window.scrollY >= element.offsetTop - 100) {
+            current = section;
+          }
         }
       }
       setActiveSection(current);
@@ -66,6 +71,7 @@ export default function Home() {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(id);
     }
   };
 
