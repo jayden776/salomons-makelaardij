@@ -107,7 +107,7 @@ export default function Home() {
               src="/salomons-logo-dark.png"
               alt="Salomons Makelaardij"
               className="h-16 w-auto"
-              style={{ clipPath: "inset(0 0 3px 0)" }}
+              style={{ clipPath: "inset(0 3px 3px 0)" }}
             />
           </div>
 
