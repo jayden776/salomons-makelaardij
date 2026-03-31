@@ -183,7 +183,7 @@ export default function Home() {
               style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
             >
               <img
-                src="/romy-salomons.jpg"
+                src="/romy-salomons-new.jpg"
                 alt="Romy Salomons"
                 className="w-full h-full object-cover object-top"
               />
@@ -491,7 +491,7 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-2xl w-80 overflow-hidden border border-gray-100 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <div className="bg-[#075E54] px-4 py-4 flex items-center gap-3">
               <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
-                <img src="/romy-salomons.jpg" alt="Romy Salomons" className="w-full h-full object-cover object-top" />
+                <img src="/romy-salomons-new.jpg" alt="Romy Salomons" className="w-full h-full object-cover object-top" />
               </div>
               <div className="flex-1">
                 <p className="text-white font-semibold text-sm">Romy Salomons</p>
