@@ -494,6 +494,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      {/* Scroll spacer: ensures page is always tall enough to scroll contact section to top */}
+      <div className="bg-[#122939] h-[60vh]" aria-hidden="true" />
 
       {/* WHATSAPP WIDGET */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
