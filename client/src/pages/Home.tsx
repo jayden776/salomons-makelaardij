@@ -265,13 +265,12 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14 relative">
+                  <div className="mb-10 flex justify-center">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
-                      className="w-full h-auto block"
+                      className="w-full h-auto block rounded-lg"
                     />
-                    <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 30%, #122939 80%)" }} />
                   </div>
                   
                   <div className="space-y-6">
