@@ -177,10 +177,10 @@ export default function Home() {
       {/* OVER MIJ SECTION */}
       <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
         <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch w-full">
-          <div className="order-2 md:order-1 flex">
+          <div className="order-2 md:order-1 flex items-stretch">
             <div
               className="relative w-full overflow-hidden shadow-2xl"
-              style={{ borderRadius: "50% 50% 0 0 / 20% 20% 0 0", minHeight: "400px" }}
+              style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0", minHeight: "400px" }}
             >
               <img
                 src="/romy-salomons-new.jpg"
