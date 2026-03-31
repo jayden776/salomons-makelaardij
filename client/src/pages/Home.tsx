@@ -63,6 +63,7 @@ export default function Home() {
   }, []);
 
   const scrollTo = (id: string) => {
+    setActiveSection(id);
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
