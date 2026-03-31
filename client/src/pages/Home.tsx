@@ -176,20 +176,20 @@ export default function Home() {
 
       {/* OVER MIJ SECTION */}
       <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
-          <div className="order-2 md:order-1 flex justify-center">
+        <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-stretch w-full">
+          <div className="order-2 md:order-1 flex">
             <div
-              className="relative w-64 md:w-72 aspect-[3/4] overflow-hidden shadow-2xl"
-              style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
+              className="relative w-full overflow-hidden shadow-2xl"
+              style={{ borderRadius: "50% 50% 0 0 / 20% 20% 0 0", minHeight: "400px" }}
             >
               <img
                 src="/romy-salomons-new.jpg"
                 alt="Romy Salomons"
-                className="w-full h-full object-cover object-top"
+                className="absolute inset-0 w-full h-full object-cover object-top"
               />
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6">
+          <div className="order-1 md:order-2 space-y-6 flex flex-col justify-center">
             <div>
               <h2 className="text-4xl text-foreground font-serif">Over Romy Salomons</h2>
               <div className="w-16 h-1 bg-primary mt-4" />
