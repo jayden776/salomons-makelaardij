@@ -107,7 +107,6 @@ export default function Home() {
               src="/salomons-logo-header.png"
               alt="Salomons Makelaardij"
               className="h-12 w-auto"
-              style={{ mixBlendMode: "screen" }}
             />
           </div>
 
@@ -266,13 +265,12 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14 relative">
+                  <div className="mb-10 flex justify-center">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
-                      className="w-full h-auto block"
+                      className="h-32 w-auto"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 h-12" style={{ background: "linear-gradient(to bottom, transparent, #122939)" }} />
                   </div>
                   
                   <div className="space-y-6">
