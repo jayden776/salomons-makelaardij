@@ -265,17 +265,13 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#1B2A44] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-8">
+                  <div className="mb-12">
                     <img
-                      src="/salomons-logo-transparent.png"
+                      src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
-                      className="h-16 w-auto"
-                      style={{ mixBlendMode: "screen" }}
+                      className="w-full max-w-[220px] h-auto"
                     />
                   </div>
-                  
-                  <h3 className="text-2xl font-serif mb-2">Salomons Makelaardij</h3>
-                  <p className="text-primary font-medium tracking-wide text-sm uppercase mb-12">NRVT taxateur wonen</p>
                   
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 text-white/80">
