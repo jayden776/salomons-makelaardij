@@ -265,11 +265,12 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14">
+                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14 bg-[#122939] overflow-hidden leading-none">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
                       className="w-full h-auto block"
+                      style={{ clipPath: "inset(0 0 3px 0)" }}
                     />
                   </div>
                   
