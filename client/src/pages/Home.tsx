@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* OVER MIJ SECTION */}
-      <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
+      <section id="over-mij" className="min-h-screen overflow-hidden flex items-center scroll-mt-28">
         <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full">
           <div className="order-2 md:order-1 flex justify-center">
             <div
@@ -216,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
+      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50 scroll-mt-28">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex-1 flex items-center py-24 pl-10 lg:pl-16 pr-8 lg:pr-12">
@@ -259,7 +259,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-24 px-6 bg-[#F5EFE6]">
+      <section id="contact" className="py-24 px-6 bg-[#F5EFE6] scroll-mt-28">
         <div className="max-w-6xl mx-auto">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
