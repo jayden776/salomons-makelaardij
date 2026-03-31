@@ -100,14 +100,14 @@ export default function Home() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#1B2A44]/95 backdrop-blur-md border-b border-white/10 shadow-lg" : "bg-transparent border-b border-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div 
-            className="cursor-pointer" 
+            className="cursor-pointer flex items-center gap-3" 
             onClick={() => scrollTo("hero")}
           >
-            <img
-              src="/salomons-logo-header-transparent.png"
-              alt="Salomons Makelaardij"
-              className="h-16 w-auto"
-            />
+            <span className="text-5xl font-serif text-white leading-none drop-shadow-md">S</span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-2xl font-serif text-white tracking-wide drop-shadow-md">Salomons</span>
+              <span className="text-[11px] tracking-[0.25em] font-semibold text-primary uppercase drop-shadow-md">Makelaardij</span>
+            </div>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
