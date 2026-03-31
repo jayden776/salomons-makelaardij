@@ -104,7 +104,7 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo-header.png"
+              src="/salomons-logo-colored.png"
               alt="Salomons Makelaardij"
               className="h-12 w-auto"
             />
@@ -265,11 +265,11 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10 flex justify-center">
+                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
-                      className="h-32 w-auto"
+                      className="w-full h-auto block"
                     />
                   </div>
                   
