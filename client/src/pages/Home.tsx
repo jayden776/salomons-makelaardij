@@ -263,13 +263,14 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-5">
               
               {/* Contact Info Left Panel */}
-              <div className="md:col-span-2 bg-[#132233] text-white p-10 lg:p-14 flex flex-col justify-between">
+              <div className="md:col-span-2 bg-[#1B2A44] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
                   <div className="mb-10">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
                       className="h-20 w-auto"
+                      style={{ mixBlendMode: "screen" }}
                     />
                   </div>
                   
