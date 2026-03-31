@@ -104,9 +104,10 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo-colored.png"
+              src="/salomons-logo-header.png"
               alt="Salomons Makelaardij"
               className="h-12 w-auto"
+              style={{ mixBlendMode: "screen" }}
             />
           </div>
 
