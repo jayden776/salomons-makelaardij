@@ -200,7 +200,7 @@ export default function Home() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Het vak heb ik in de praktijk geleerd bij Beerse Makelaardij. Daarnaast ben ik actief als{'\u00A0'}makelaar bij Coltof Makelaardij, waardoor ik dagelijks betrokken ben bij de woningmarkt in de regio.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               Mijn interesse in vastgoed ontstond tijdens mijn werk als property manager in Barcelona. Terug in Den Helder heb ik bewust gekozen om mij verder te specialiseren en heb ik mijn papieren behaald als Register Taxateur Wonen <span className="whitespace-nowrap">en KRMT-makelaar.</span>
             </p>
             <Button
