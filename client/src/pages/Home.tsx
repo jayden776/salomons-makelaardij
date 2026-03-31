@@ -104,10 +104,9 @@ export default function Home() {
             onClick={() => scrollTo("hero")}
           >
             <img
-              src="/salomons-logo-dark.png"
+              src="/salomons-logo-no-bg-s.png"
               alt="Salomons Makelaardij"
               className="h-16 w-auto"
-              style={{ clipPath: "inset(0 3px 3px 0)" }}
             />
           </div>
 
