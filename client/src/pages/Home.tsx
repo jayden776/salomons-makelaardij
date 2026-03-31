@@ -65,7 +65,9 @@ export default function Home() {
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      const headerHeight = 112;
+      const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top, behavior: "smooth" });
     }
   };
 
