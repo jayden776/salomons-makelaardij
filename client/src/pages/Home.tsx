@@ -264,15 +264,15 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="min-h-screen py-24 px-6 bg-[#F5EFE6]">
+      <section id="contact" className="py-8 px-6 bg-[#F5EFE6]">
         <div className="max-w-6xl mx-auto">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
               
               {/* Contact Info Left Panel */}
-              <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
+              <div className="md:col-span-2 bg-[#122939] text-white p-8 lg:p-10 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14 bg-[#122939] overflow-hidden leading-none">
+                  <div className="mb-8 -mx-8 lg:-mx-10 -mt-8 lg:-mt-10 bg-[#122939] overflow-hidden leading-none">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
@@ -299,15 +299,15 @@ export default function Home() {
               </div>
 
               {/* Form Right Panel */}
-              <div className="md:col-span-3 p-10 lg:p-14 bg-card">
-                <div className="mb-8">
+              <div className="md:col-span-3 p-8 lg:p-10 bg-card">
+                <div className="mb-5">
                   <h2 className="text-3xl font-serif text-foreground">Neem contact op</h2>
-                  <div className="w-12 h-1 bg-primary mt-3 mb-4" />
+                  <div className="w-12 h-1 bg-primary mt-3 mb-3" />
                   <p className="text-muted-foreground">Ik neem doorgaans binnen 24 uur contact met u op.</p>
                 </div>
 
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <FormField
                         control={form.control}
@@ -375,7 +375,7 @@ export default function Home() {
                           <FormControl>
                             <Textarea 
                               placeholder="Geef hier een korte omschrijving van uw situatie..." 
-                              className="min-h-[120px] bg-white rounded-lg resize-none" 
+                              className="min-h-[80px] bg-white rounded-lg resize-none" 
                               {...field} 
                             />
                           </FormControl>
