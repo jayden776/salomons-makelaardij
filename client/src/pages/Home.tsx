@@ -233,7 +233,7 @@ export default function Home() {
                 Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI) en voldoet aan de geldende richtlijnen. U ontvangt een gevalideerd taxatierapport dat door geldverstrekkers wordt geaccepteerd en helder inzicht geeft in de totstandkoming van de waarde.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Als NRVT-geregistreerde taxateur ben ik actief in de Kop van Noord-Holland, in een straal van circa 20 kilometer rondom Den Helder, waaronder Julianadorp, Schagen, Callantsoog, Anna Paulowna, Wieringerwaard, Breezand, Hippolytushoef en Wieringerwerf.
+                Als NRVT-geregistreerde taxateur ben ik actief in een straal van circa 20 kilometer rondom Den Helder.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Heeft u een taxatie nodig of wilt u overleggen? U bent van harte welkom om contact op te nemen.
