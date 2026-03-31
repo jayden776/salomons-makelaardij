@@ -140,7 +140,7 @@ export default function Privacyverklaring() {
         </div>
       </main>
 
-      <footer className="bg-[#0F172A] py-6 text-center text-white/40 text-sm">
+      <footer className="bg-[#122939] py-6 text-center text-white/40 text-sm">
         <p>&copy; {new Date().getFullYear()} Salomons Makelaardij. Alle rechten voorbehouden.</p>
       </footer>
     </div>

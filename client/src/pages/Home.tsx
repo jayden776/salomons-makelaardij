@@ -399,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#0F172A] py-10 text-center text-white/50 text-sm">
+      <footer className="bg-[#122939] py-10 text-center text-white/50 text-sm">
         <div className="max-w-5xl mx-auto px-6">
 
           {/* Three-column footer layout */}
