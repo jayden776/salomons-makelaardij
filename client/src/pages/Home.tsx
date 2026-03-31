@@ -98,7 +98,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/20">
       {/* HEADER */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#122939]">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between">
           <div 
             className="cursor-pointer" 
             onClick={() => scrollTo("hero")}
@@ -106,7 +106,7 @@ export default function Home() {
             <img
               src="/salomons-logo-no-bg-s.png"
               alt="Salomons Makelaardij"
-              className="h-20 w-auto"
+              className="h-28 w-auto"
             />
           </div>
 
@@ -130,7 +130,7 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center pt-28">
         <div className="absolute inset-0 z-0">
           <img
             src="/hero-bg.jpg"
