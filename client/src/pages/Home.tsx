@@ -106,7 +106,7 @@ export default function Home() {
             <img
               src="/salomons-logo-no-bg-s.png"
               alt="Salomons Makelaardij"
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
 
