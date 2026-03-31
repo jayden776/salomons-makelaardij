@@ -21,7 +21,7 @@ export default function Privacyverklaring() {
       </header>
 
       <main className="flex-1 py-16 px-6">
-        <div className="max-w-3xl mx-auto prose prose-slate">
+        <div className="max-w-3xl mx-auto font-sans">
           <h1 className="text-4xl font-serif text-foreground mb-2">Privacyverklaring</h1>
           <div className="w-12 h-1 bg-primary mb-10" />
 
