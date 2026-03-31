@@ -265,7 +265,7 @@ export default function Home() {
               {/* Contact Info Left Panel */}
               <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
-                  <div className="mb-10">
+                  <div className="mb-10 flex justify-center">
                     <img
                       src="/salomons-logo-dark.png"
                       alt="Salomons Makelaardij"
