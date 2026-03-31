@@ -263,16 +263,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-5">
               
               {/* Contact Info Left Panel */}
-              <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
-                <div>
-                  <div className="mb-10 flex justify-center">
-                    <img
-                      src="/salomons-logo-dark.png"
-                      alt="Salomons Makelaardij"
-                      className="w-full h-auto block rounded-lg"
-                    />
-                  </div>
-                  
+              <div className="md:col-span-2 relative text-white flex flex-col justify-end overflow-hidden min-h-[320px]">
+                <img
+                  src="/salomons-logo-dark.png"
+                  alt="Salomons Makelaardij"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                />
+                <div className="relative z-10 p-10 lg:p-14" style={{ background: "linear-gradient(to top, rgba(18,41,57,0.95) 60%, transparent)" }}>
                   <div className="space-y-6">
                     <div className="flex items-center gap-4 text-white/80">
                       <Phone className="w-6 h-6 text-primary" />
