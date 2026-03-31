@@ -107,6 +107,7 @@ export default function Home() {
               src="/salomons-logo-colored.png"
               alt="Salomons Makelaardij"
               className="h-16 w-auto"
+              style={{ filter: "brightness(0) invert(1)" }}
             />
           </div>
 
