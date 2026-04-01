@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "o0IGYy5myaRyfkxLbwZ-A"
+uri = "file://salomons-makelaardij.tar.gz"
+type = "unspecified"
+title = "Salomons Makelaardij – projectbestanden"
