@@ -73,7 +73,8 @@ export default function Home() {
     }, 1000);
     const el = document.getElementById(id);
     if (el) {
-      const headerHeight = 112;
+      const header = document.querySelector("header");
+      const headerHeight = header?.offsetHeight ?? 112;
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
@@ -185,11 +186,11 @@ export default function Home() {
       </section>
 
       {/* OVER MIJ SECTION */}
-      <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+      <section id="over-mij" className="overflow-hidden flex items-center">
+        <div className="max-w-7xl mx-auto px-6 py-12 md:py-20 xl:py-28 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center w-full">
           <div className="order-2 md:order-1 flex justify-center">
             <div
-              className="relative w-80 md:w-[26rem] aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
+              className="relative w-56 sm:w-72 md:w-[26rem] aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
               style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
             >
               <img
@@ -224,10 +225,10 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
+      <section id="diensten" className="flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex-1 flex items-center py-24 px-10 lg:px-16">
+          <div className="flex-1 flex items-center py-12 md:py-20 xl:py-28 px-6 md:px-10 lg:px-16">
             <div className="max-w-xl space-y-6">
               <div>
                 <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
@@ -267,7 +268,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-24 px-6 bg-[#F5EFE6]">
+      <section id="contact" className="py-12 md:py-20 xl:py-28 px-4 md:px-6 bg-[#F5EFE6]">
         <div className="max-w-6xl mx-auto">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">

@@ -158,6 +158,7 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: clamp(13px, 1.1vw, 20px);
   }
 
   body {
