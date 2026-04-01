@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
+      <section id="diensten" className="min-h-[75vh] flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex-1 flex items-center justify-center pt-8 pb-16 md:pt-12 md:pb-28 px-6 md:px-10 lg:px-16">
@@ -276,11 +276,11 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex-1 min-h-[400px] py-10 md:py-16 pr-6 md:pr-10 lg:pr-16">
+          <div className="flex-1 min-h-[400px]">
             <img
               src="/noordzee.png"
               alt="Noordzee - Den Helder"
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
