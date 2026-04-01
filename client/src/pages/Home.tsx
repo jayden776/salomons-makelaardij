@@ -276,11 +276,11 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex-1 min-h-[400px]">
+          <div className="flex-1 min-h-[400px] py-10 md:py-16 pr-6 md:pr-10 lg:pr-16">
             <img
               src="/noordzee.png"
               alt="Noordzee - Den Helder"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-lg"
             />
           </div>
         </div>
