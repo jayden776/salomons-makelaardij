@@ -75,6 +75,19 @@ export default function Home() {
     if (el) {
       const header = document.querySelector("header");
       const headerHeight = header?.offsetHeight ?? 112;
+
+      if (id === "diensten") {
+        const contentEl = document.getElementById("diensten-content");
+        if (contentEl) {
+          const contentTop = contentEl.getBoundingClientRect().top + window.scrollY;
+          const contentHeight = contentEl.offsetHeight;
+          const available = window.innerHeight - headerHeight;
+          const offset = Math.max(0, (available - contentHeight) / 2);
+          window.scrollTo({ top: Math.max(0, contentTop - headerHeight - offset), behavior: "smooth" });
+          return;
+        }
+      }
+
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
@@ -229,7 +242,7 @@ export default function Home() {
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex-1 flex items-center py-12 md:py-20 xl:py-28 px-6 md:px-10 lg:px-16">
-            <div className="max-w-xl space-y-6">
+            <div id="diensten-content" className="max-w-xl space-y-6">
               <div>
                 <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
                 <div className="w-16 h-1 bg-primary mt-4" />
