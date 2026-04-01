@@ -241,7 +241,7 @@ export default function Home() {
       <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex-1 flex items-center pt-0 pb-32 md:pt-0 md:pb-56 pl-14 pr-6 md:pl-28 md:pr-10 lg:pl-40 lg:pr-16">
+          <div className="flex-1 flex items-center pt-0 pb-32 md:pt-0 md:pb-56 pl-6 pr-6 md:pl-14 md:pr-10 lg:pl-20 lg:pr-16">
             <div id="diensten-content" className="max-w-2xl space-y-4">
               <div>
                 <h2 className="text-5xl text-foreground font-serif">Diensten</h2>
