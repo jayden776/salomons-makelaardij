@@ -270,7 +270,7 @@ export default function Home() {
               </p>
               <Button
                 onClick={() => scrollTo("contact")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 text-sm md:px-4 md:py-2 md:text-xs rounded-full tracking-wide shadow-md hover:shadow-lg transition-all hover:-translate-y-1 whitespace-nowrap"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2.5 text-sm md:px-5 md:py-2 md:text-sm rounded-full tracking-wide shadow-md hover:shadow-lg transition-all hover:-translate-y-1 whitespace-nowrap"
               >
                 Contact opnemen
               </Button>
