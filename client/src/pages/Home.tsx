@@ -244,7 +244,7 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="min-h-[75vh] flex overflow-hidden bg-white/50">
+      <section id="diensten" className="min-h-[60vh] flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex-1 flex items-center justify-center pt-8 pb-16 md:pt-12 md:pb-28 px-6 md:px-10 lg:px-16">
