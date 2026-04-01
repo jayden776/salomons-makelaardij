@@ -200,7 +200,7 @@ export default function Home() {
 
       {/* OVER MIJ SECTION */}
       <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
+        <div className="max-w-7xl mx-auto px-6 pt-0 pb-16 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           <div className="order-2 md:order-1 flex justify-center">
             <div
               className="relative w-56 sm:w-72 md:w-96 aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
