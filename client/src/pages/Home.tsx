@@ -550,7 +550,7 @@ export default function Home() {
 
             <div className="bg-white px-4 py-4">
               <a
-                href="https://wa.me/PLACEHOLDER"
+                href="https://wa.me/31223234040"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="link-whatsapp-start"
