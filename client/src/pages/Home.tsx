@@ -76,16 +76,22 @@ export default function Home() {
       const header = document.querySelector("header");
       const headerHeight = header?.offsetHeight ?? 112;
 
+      const centerInViewport = (contentEl: HTMLElement) => {
+        const contentTop = contentEl.getBoundingClientRect().top + window.scrollY;
+        const contentHeight = contentEl.offsetHeight;
+        const available = window.innerHeight - headerHeight;
+        const offset = Math.max(0, (available - contentHeight) / 2);
+        window.scrollTo({ top: Math.max(0, contentTop - headerHeight - offset), behavior: "smooth" });
+      };
+
       if (id === "contact") {
         const card = document.querySelector("#contact .max-w-6xl") as HTMLElement | null;
-        if (card) {
-          const cardTop = card.getBoundingClientRect().top + window.scrollY;
-          const cardHeight = card.offsetHeight;
-          const available = window.innerHeight - headerHeight;
-          const offset = Math.max(0, (available - cardHeight) / 2);
-          window.scrollTo({ top: Math.max(0, cardTop - headerHeight - offset), behavior: "smooth" });
-          return;
-        }
+        if (card) { centerInViewport(card); return; }
+      }
+
+      if (id === "diensten") {
+        const content = document.getElementById("diensten-content");
+        if (content) { centerInViewport(content); return; }
       }
 
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
@@ -241,7 +247,7 @@ export default function Home() {
       <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex-1 flex items-center pt-0 pb-32 md:pt-0 md:pb-56 pl-6 pr-6 md:pl-14 md:pr-10 lg:pl-20 lg:pr-16">
+          <div className="flex-1 flex items-center justify-center pt-0 pb-32 md:pt-0 md:pb-56 px-6 md:px-10 lg:px-16">
             <div id="diensten-content" className="max-w-2xl space-y-4">
               <div>
                 <h2 className="text-5xl text-foreground font-serif">Diensten</h2>
