@@ -14,7 +14,7 @@ app.use("/api", router);
 const publicDir = path.resolve(process.cwd(), "dist/public");
 app.use(express.static(publicDir));
 
-app.get("*", (_req, res) => {
+app.use((_req, res) => {
   res.sendFile(path.join(publicDir, "index.html"));
 });
 
