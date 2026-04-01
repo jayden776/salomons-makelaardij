@@ -269,8 +269,8 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="min-h-screen pt-4 pb-20 md:pt-6 md:pb-32 px-4 md:px-6 bg-[#F5EFE6]">
-        <div className="max-w-6xl mx-auto">
+      <section id="contact" className="min-h-screen flex flex-col xl:justify-center pt-4 pb-20 md:pt-6 md:pb-32 xl:py-0 px-4 md:px-6 bg-[#F5EFE6]">
+        <div className="max-w-6xl mx-auto w-full">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
               
