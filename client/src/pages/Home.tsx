@@ -244,22 +244,22 @@ export default function Home() {
           <div className="flex-1 flex items-center pt-0 pb-32 md:pt-0 md:pb-56 pl-14 pr-6 md:pl-28 md:pr-10 lg:pl-40 lg:pr-16">
             <div id="diensten-content" className="max-w-2xl space-y-4">
               <div>
-                <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
-                <div className="w-16 h-1 bg-primary mt-3" />
+                <h2 className="text-5xl text-foreground font-serif">Diensten</h2>
+                <div className="w-16 h-1 bg-primary mt-4" />
               </div>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Een taxatie vraagt om zorgvuldigheid en kennis van de lokale markt. Ik verzorg onafhankelijke woningtaxaties die helder en goed onderbouwd zijn, bijvoorbeeld bij aankoop, (her)financiering, verbouwing, scheiding of nalatenschap. Iedere situatie vraagt om maatwerk en een persoonlijke benadering.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Na het maken van een afspraak kom ik bij u langs om de woning op te nemen en uw situatie te bespreken. Op basis daarvan werk ik de taxatie uit tot een inzichtelijk rapport, waarbij u kunt rekenen op een vlotte en zorgvuldige afhandeling.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI) en voldoet aan de geldende richtlijnen. U ontvangt een gevalideerd taxatierapport dat door geldverstrekkers wordt geaccepteerd en helder inzicht geeft in de totstandkoming van de waarde.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Als NRVT-geregistreerde taxateur ben ik actief in een straal van circa 20 kilometer rondom Den Helder.
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
+              <p className="text-lg text-muted-foreground leading-relaxed">
                 Heeft u een taxatie nodig of wilt u overleggen? U bent van harte welkom om contact op te nemen.
               </p>
               <Button
