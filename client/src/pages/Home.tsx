@@ -76,18 +76,6 @@ export default function Home() {
       const header = document.querySelector("header");
       const headerHeight = header?.offsetHeight ?? 112;
 
-      if (id === "diensten") {
-        const contentEl = document.getElementById("diensten-content");
-        if (contentEl) {
-          const contentTop = contentEl.getBoundingClientRect().top + window.scrollY;
-          const contentHeight = contentEl.offsetHeight;
-          const available = window.innerHeight - headerHeight;
-          const offset = Math.max(0, (available - contentHeight) / 2);
-          window.scrollTo({ top: Math.max(0, contentTop - headerHeight - offset), behavior: "smooth" });
-          return;
-        }
-      }
-
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
@@ -238,28 +226,28 @@ export default function Home() {
       </section>
 
       {/* DIENSTEN SECTION */}
-      <section id="diensten" className="flex overflow-hidden bg-white/50">
+      <section id="diensten" className="min-h-screen flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex-1 flex items-center py-12 md:py-20 xl:py-28 px-6 md:px-10 lg:px-16">
-            <div id="diensten-content" className="max-w-xl space-y-6">
+          <div className="flex-1 flex items-center py-8 md:py-12 px-6 md:px-10 lg:px-16">
+            <div id="diensten-content" className="max-w-xl space-y-4">
               <div>
                 <h2 className="text-4xl text-foreground font-serif">Diensten</h2>
-                <div className="w-16 h-1 bg-primary mt-4" />
+                <div className="w-16 h-1 bg-primary mt-3" />
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Een taxatie vraagt om zorgvuldigheid en kennis van de lokale markt. Ik verzorg onafhankelijke woningtaxaties die helder en goed onderbouwd zijn, bijvoorbeeld bij aankoop, (her)financiering, verbouwing, scheiding of nalatenschap. Iedere situatie vraagt om maatwerk en een persoonlijke benadering.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Na het maken van een afspraak kom ik bij u langs om de woning op te nemen en uw situatie te bespreken. Op basis daarvan werk ik de taxatie uit tot een inzichtelijk rapport, waarbij u kunt rekenen op een vlotte en zorgvuldige afhandeling.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Het rapport wordt gecontroleerd door het Nederlands Woning Waarde Instituut (NWWI) en voldoet aan de geldende richtlijnen. U ontvangt een gevalideerd taxatierapport dat door geldverstrekkers wordt geaccepteerd en helder inzicht geeft in de totstandkoming van de waarde.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Als NRVT-geregistreerde taxateur ben ik actief in een straal van circa 20 kilometer rondom Den Helder.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Heeft u een taxatie nodig of wilt u overleggen? U bent van harte welkom om contact op te nemen.
               </p>
               <Button
