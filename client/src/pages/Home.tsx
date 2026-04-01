@@ -76,6 +76,18 @@ export default function Home() {
       const header = document.querySelector("header");
       const headerHeight = header?.offsetHeight ?? 112;
 
+      if (id === "contact") {
+        const card = document.querySelector("#contact .max-w-6xl") as HTMLElement | null;
+        if (card) {
+          const cardTop = card.getBoundingClientRect().top + window.scrollY;
+          const cardHeight = card.offsetHeight;
+          const available = window.innerHeight - headerHeight;
+          const offset = Math.max(0, (available - cardHeight) / 2);
+          window.scrollTo({ top: Math.max(0, cardTop - headerHeight - offset), behavior: "smooth" });
+          return;
+        }
+      }
+
       const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
       window.scrollTo({ top, behavior: "smooth" });
     }
