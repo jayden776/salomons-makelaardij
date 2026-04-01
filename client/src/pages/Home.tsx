@@ -269,13 +269,13 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="min-h-screen xl:h-screen flex flex-col pt-4 pb-20 md:pt-6 md:pb-32 xl:pt-0 xl:pb-0 px-4 md:px-6 xl:px-0 bg-[#F5EFE6]">
-        <div className="max-w-6xl mx-auto w-full xl:max-w-none xl:h-full xl:flex xl:flex-col">
-          <Card className="shadow-2xl border-0 overflow-hidden bg-card xl:flex-1 xl:rounded-none">
-            <div className="grid grid-cols-1 md:grid-cols-5 xl:h-full">
+      <section id="contact" className="min-h-screen flex flex-col xl:justify-center pt-4 pb-20 md:pt-6 md:pb-32 xl:py-16 px-4 md:px-6 bg-[#F5EFE6]">
+        <div className="max-w-6xl mx-auto w-full">
+          <Card className="shadow-2xl border-0 overflow-hidden bg-card">
+            <div className="grid grid-cols-1 md:grid-cols-5">
               
               {/* Contact Info Left Panel */}
-              <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between xl:justify-center">
+              <div className="md:col-span-2 bg-[#122939] text-white p-10 lg:p-14 flex flex-col justify-between">
                 <div>
                   <div className="mb-10 -mx-10 lg:-mx-14 -mt-10 lg:-mt-14 bg-[#122939] overflow-hidden leading-none">
                     <img
@@ -304,7 +304,7 @@ export default function Home() {
               </div>
 
               {/* Form Right Panel */}
-              <div className="md:col-span-3 p-10 lg:p-14 bg-card xl:flex xl:flex-col xl:justify-center">
+              <div className="md:col-span-3 p-10 lg:p-14 bg-card">
                 <div className="mb-8">
                   <h2 className="text-3xl font-serif text-foreground">Neem contact op</h2>
                   <div className="w-12 h-1 bg-primary mt-3 mb-4" />
