@@ -187,11 +187,11 @@ export default function Home() {
       </section>
 
       {/* OVER MIJ SECTION */}
-      <section id="over-mij" className="overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 py-12 md:py-20 xl:py-28 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center w-full">
+      <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
+        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           <div className="order-2 md:order-1 flex justify-center">
             <div
-              className="relative w-56 sm:w-72 md:w-[26rem] aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
+              className="relative w-44 sm:w-56 md:w-72 aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
               style={{ borderRadius: "50% 50% 0 0 / 40% 40% 0 0" }}
             >
               <img
@@ -201,15 +201,15 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6">
+          <div className="order-1 md:order-2 space-y-4">
             <div>
               <h2 className="text-4xl text-foreground font-serif">Over Romy Salomons</h2>
-              <div className="w-16 h-1 bg-primary mt-4" />
+              <div className="w-16 h-1 bg-primary mt-3" />
             </div>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               Als Register Taxateur Wonen zorg ik voor taxaties die kloppen en duidelijkheid geven. Geen standaard aanpak, maar aandacht voor de woning én de situatie waarin u zich bevindt.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               Het vak heb ik in de praktijk geleerd bij Beerse Makelaardij. Daarnaast ben ik actief als{'\u00A0'}makelaar bij Coltof Makelaardij, waardoor ik dagelijks betrokken ben bij de woningmarkt in de regio.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
