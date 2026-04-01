@@ -276,7 +276,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="flex-1 min-h-[400px]">
+          <div className="flex-1">
             <img
               src="/noordzee.png"
               alt="Noordzee - Den Helder"
