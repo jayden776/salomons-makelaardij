@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="py-12 md:py-20 xl:py-28 px-4 md:px-6 bg-[#F5EFE6]">
+      <section id="contact" className="pt-4 pb-20 md:pt-6 md:pb-32 px-4 md:px-6 bg-[#F5EFE6]">
         <div className="max-w-6xl mx-auto">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
