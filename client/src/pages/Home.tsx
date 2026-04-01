@@ -173,7 +173,8 @@ export default function Home() {
 
         <div className="relative z-10 text-center px-12 md:px-20 w-full mt-16 animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight font-serif inline-block text-left" style={{ textShadow: "0 2px 16px rgba(0,0,0,0.8)" }}>
-            <span className="block">Heldere woningtaxaties in de Kop van Noord-Holland</span>
+            <span className="block">heldere woningtaxaties</span>
+            <span className="block">in de Kop van Noord Holland</span>
           </h1>
 
           <div className="mt-8 flex items-center justify-center gap-3 text-white font-semibold text-sm md:text-base tracking-widest uppercase" style={{ textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>
