@@ -248,7 +248,7 @@ export default function Home() {
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
           <div className="flex-1 flex items-center justify-center py-4 md:py-6 px-6 md:px-10 lg:px-16">
-            <div id="diensten-content" className="max-w-2xl space-y-2">
+            <div id="diensten-content" className="max-w-2xl space-y-4">
               <div>
                 <h2 className="text-5xl md:text-4xl text-foreground font-serif">Diensten</h2>
                 <div className="w-16 h-1 bg-primary mt-4" />
