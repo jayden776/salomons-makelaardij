@@ -1,23 +1,5 @@
 import nodemailer from "nodemailer";
 
-function createTransporter() {
-  const host = process.env.SMTP_HOST;
-  const port = parseInt(process.env.SMTP_PORT || "587", 10);
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-
-  if (!host || !user || !pass) {
-    return null;
-  }
-
-  return nodemailer.createTransport({
-    host,
-    port,
-    secure: port === 465,
-    auth: { user, pass },
-  });
-}
-
 export async function sendContactEmail(data: {
   naam: string;
   email: string;
@@ -25,17 +7,29 @@ export async function sendContactEmail(data: {
   plaatsWoning: string;
   bericht: string;
 }) {
-  const transporter = createTransporter();
+  const host = process.env.SMTP_HOST;
+  const port = parseInt(process.env.SMTP_PORT || "587", 10);
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
 
-  if (!transporter) {
+  if (!host || !user || !pass) {
     console.warn("SMTP niet geconfigureerd — e-mail niet verzonden.");
     return false;
   }
 
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure: port === 465,
+    auth: { user, pass },
+  });
+
   const to = process.env.CONTACT_EMAIL || "info@salomonsmakelaardij.nl";
 
+  console.log(`[mailer] Sending email via ${host}:${port} as ${user} to ${to}`);
+
   await transporter.sendMail({
-    from: `"Salomons Makelaardij Website" <${process.env.SMTP_USER}>`,
+    from: `"Salomons Makelaardij Website" <${user}>`,
     to,
     replyTo: data.email,
     subject: `Nieuwe taxatieaanvraag van ${data.naam}`,
@@ -71,5 +65,6 @@ export async function sendContactEmail(data: {
     `,
   });
 
+  console.log("[mailer] E-mail succesvol verzonden.");
   return true;
 }
