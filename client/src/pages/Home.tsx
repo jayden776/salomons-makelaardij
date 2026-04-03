@@ -215,7 +215,7 @@ export default function Home() {
 
       {/* OVER MIJ SECTION */}
       <section id="over-mij" className="min-h-screen overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 pt-0 pb-16 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
+        <div className="max-w-7xl mx-auto px-6 py-16 md:pt-0 md:pb-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center w-full">
           <div className="order-2 md:order-1 flex justify-center">
             <div
               className="relative w-56 sm:w-72 md:w-96 aspect-[3/4] overflow-hidden shadow-2xl flex-shrink-0"
@@ -256,7 +256,7 @@ export default function Home() {
       <section id="diensten" className="min-h-[25vh] flex overflow-hidden bg-white/50">
         <span id="werkgebied" />
         <div className="flex flex-col md:flex-row w-full">
-          <div className="flex-1 flex items-center justify-center py-2 md:py-3 px-6 md:px-10 lg:px-16">
+          <div className="flex-1 flex items-center justify-center py-14 md:py-3 px-6 md:px-10 lg:px-16">
             <div id="diensten-content" className="max-w-2xl space-y-4">
               <div>
                 <h2 className="text-5xl md:text-4xl text-foreground font-serif">Diensten</h2>
@@ -296,7 +296,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="flex flex-col items-center justify-center px-4 md:px-6 py-8 bg-[#F5EFE6]" style={{ minHeight: 'calc(100vh - 7rem)' }}>
+      <section id="contact" className="flex flex-col items-center justify-center px-4 md:px-6 py-16 md:py-8 bg-[#F5EFE6]" style={{ minHeight: 'calc(100vh - 7rem)' }}>
         <div className="max-w-6xl w-full">
           <Card className="shadow-2xl border-0 overflow-hidden bg-card">
             <div className="grid grid-cols-1 md:grid-cols-5">
